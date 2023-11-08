@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/recipe_model.dart';
+import 'package:flutter_project/01first_flutter_app/recipe_model.dart';
 class RecipeDetail extends StatefulWidget { // slider를 추가하기 위해 stateful widget을 사용
   final Recipe recipe;
   const RecipeDetail({Key? key, required this.recipe}) : super(key: key);
