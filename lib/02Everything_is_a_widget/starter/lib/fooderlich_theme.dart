@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FooderlichTheme {
   // 1
-  static TextTheme lightTextTheme = TextTheme(
+    static TextTheme lightTextTheme = TextTheme(
     bodyText1: GoogleFonts.openSans(
       fontSize: 14.0,
       fontWeight: FontWeight.w700,
@@ -12,7 +12,7 @@ class FooderlichTheme {
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.black,
+      color: Colors.red,
     ),
     headline2: GoogleFonts.openSans(
       fontSize: 21.0,
@@ -41,7 +41,7 @@ class FooderlichTheme {
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.white,
+      color: Colors.red,
     ),
     headline2: GoogleFonts.openSans(
       fontSize: 21.0,
@@ -80,7 +80,7 @@ class FooderlichTheme {
         backgroundColor: Colors.black,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        selectedItemColor: Colors.red,
       ),
       textTheme: lightTextTheme,
     );
