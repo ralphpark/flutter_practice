@@ -12,7 +12,7 @@ class FooderlichTheme {
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.red,
+      color: Colors.black,
     ),
     headline2: GoogleFonts.openSans(
       fontSize: 21.0,
@@ -41,7 +41,7 @@ class FooderlichTheme {
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.red,
+      color: Colors.white,
     ),
     headline2: GoogleFonts.openSans(
       fontSize: 21.0,
@@ -80,7 +80,7 @@ class FooderlichTheme {
         backgroundColor: Colors.black,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.red,
+        selectedItemColor: Colors.black,
       ),
       textTheme: lightTextTheme,
     );

@@ -2,6 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'card1.dart';
+import 'card2.dart';
+
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
   @override
@@ -12,8 +16,8 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
-    Container(color: Colors.redAccent),
-    Container(color: Colors.greenAccent),
+    const Card1(),
+    const Card2(),
     Container(color: Colors.orangeAccent),
   ];
 
@@ -31,8 +35,7 @@ class _HomeState extends State<Home> {
         'Fooderlich',
         style: Theme.of(context).textTheme.headline6,
       )),
-      body: Center(child: Text('Let\'s get cooking 👩‍🍳',
-        style: Theme.of(context).textTheme.headline1,)),
+      body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: (int index){
           _onItemClick(index);
