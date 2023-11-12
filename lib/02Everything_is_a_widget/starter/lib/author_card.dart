@@ -48,8 +48,8 @@ Widget build(BuildContext context) {
               setState(() {
               });
               const snackBar = SnackBar(content: Text('Favorite Pressed'));
-              ScaffoldMessenger.of(context).showSnackBar(snackBar); // 이대로 외우면 된다.
-        },)
+            ScaffoldMessenger.of(context).showSnackBar(snackBar); // 이대로 외우면 된다
+          },)
       ],
     );
   }
