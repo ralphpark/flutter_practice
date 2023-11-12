@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'author_card.dart';
+import 'circle_image.dart';
 import 'fooderlich_theme.dart';
 
 
@@ -26,14 +28,29 @@ final String heart = '\u2665';
           ),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
         ),
-        child: const Column(
+        child:  Column(
           children: [
-            Row(
-              children: [],
-            ),
-            Row(
-              children: [Text('first'), Text('second')],
-            )
+              AuthorCard(
+                authorName: 'Mike Katz',
+                title: 'Smoothie Connoisseur',
+                imageProvider: AssetImage('assets/author_katz.jpeg'),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 32),
+                      child: RotatedBox(
+                          quarterTurns: 3,
+                          child: Text('Smoothie',
+                              style: Theme.of(context).textTheme.headline1)),
+                    ),
+                    Text('Recipe', style:Theme.of(context).textTheme.headline1)
+                  ],
+                ),
+              )
           ],
         )
       ),
