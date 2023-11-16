@@ -18,12 +18,15 @@ class ExploreScreen extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.done) {
             if(snapshot.hasData) {
               final todayRecipe = snapshot.data?.todayRecipes ?? [];
+              final friendPosts = snapshot.data?.friendPosts ?? [];
+              // data가 null이면 null을 반환하고 아니면 friendPosts를 통해서 데이터를 가져오는데
+              // null이면 빈 리스트를 반환한다.
               return Center(
                 child: ListView(
                   children: [
                     TodayRecipeListView(recipes: todayRecipe,),
                     const SizedBox(height: 32,),
-                     FriendPostListView(),
+                     FriendPostListView(posts: friendPosts,),
                   ],
                 ),
               );
